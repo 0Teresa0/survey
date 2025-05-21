@@ -1,1 +1,40 @@
-
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>問卷隨機分流中...</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 15%;
+    }
+    h1 {
+      font-size: 1.8rem;
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+  </style>
+  <script>
+    const links = [
+      "https://www.surveycake.com/s/eGpgq",
+      "https://www.surveycake.com/s/NV8qG",
+      "https://www.surveycake.com/s/PZlXy",
+      "https://www.surveycake.com/s/qG1dd",
+      "https://www.surveycake.com/s/WGYKA",
+      "https://www.surveycake.com/s/0ZWPL"
+    ];
+    const selected = links[Math.floor(Math.random() * links.length)];
+    setTimeout(() => {
+      window.location.href = selected;
+    }, 2000); // 2秒後跳轉
+  </script>
+</head>
+<body>
+  <h1>請稍候，系統正在為您分配問卷...</h1>
+  <p>即將自動導向問卷頁面，請不要關閉視窗。</p>
+</body>
+</html>
